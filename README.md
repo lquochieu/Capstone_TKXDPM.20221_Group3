@@ -1,7 +1,7 @@
 # Capstone_TKXDPM.20221_Group3
 ## Usecase diagram
 <picture>
-  <img alt="Usecase" src="https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week1/Requirement%20Analysis/Usecase%20Diagram/UC%20RentalBike.png">
+  <img alt="Usecase" src="https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week1/Requirement%20Analysis/Usecase%20Diagram/UC%20RentalBike.png">
   </picture>
   
 ## Work in week 1
