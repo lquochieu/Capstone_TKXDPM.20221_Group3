@@ -36,3 +36,5 @@
   + [Usecase specification](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week1/Requirement%20Analysis/SRS.pdf)
   + [Activity diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week1/Requirement%20Analysis/Activity%20Diagram/Return-bike.png)
   + [Sequence diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week1/Architectural%20Design/Sequence%20Diagram/Return-bike.png)
+
+## Work in week 2
