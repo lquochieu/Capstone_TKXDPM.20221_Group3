@@ -38,3 +38,26 @@
   + [Sequence diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week1/Architectural%20Design/Sequence%20Diagram/Return-bike.png)
 
 ## Work in week 2
+### Joint work
+1. [Unified Analysis Class Diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Class%20Design/Unified%20Analysis%20Class%20Diagram.png)
+2. [Class diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Class%20Design/Class%20Design.png)
+### Individual work
+1. **Trần Trọng Hiệp**:
+- Analysis diagram:
+  + [Usecase *"Dock-detail"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/dock-detail.png)
+  + [Usecase *"Bike-detail"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/bike-detail.png)
+  + [Usecase *"Rent-bike"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/rent-bike.png)
+- Subsystem design:
+  + [Barcode subsystem](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/Subsystem/Barcode%20subsystem)
+  + [Interbank subsystem](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/Subsystem/Interbank%20subsystem)
+2. **Trần Lê Hiệp**:
+- Analysis diagram:
+  + [Usecase *"Barcode"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/barcode.png)
+  + [Usecase *"Deposit"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/deposit.png)
+- [GUI specification](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI)
+3. **Lê Huy Hoàng**:
+- Analysis diagram:
+  + [Usecase *"Rental-bike-detail"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/rented-bike-detail.png)
+  + [Usecase *"Return-bike"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/return-bike.png)
+- [GUI design](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI)
+- [Screen transition diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI/ScreenTransitionDiagram.png)
