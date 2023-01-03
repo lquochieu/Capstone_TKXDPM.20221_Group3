@@ -54,7 +54,7 @@
 - Analysis diagram:
   + [Usecase *"Barcode"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/barcode.png)
   + [Usecase *"Deposit"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/deposit.png)
-- [GUI specification](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI)
+- [GUI specification](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Interface%20Design/Screen%20Specifications.pdf)
 3. **Lê Huy Hoàng**:
 - Analysis diagram:
   + [Usecase *"Rental-bike-detail"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/rented-bike-detail.png)
