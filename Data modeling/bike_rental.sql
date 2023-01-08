@@ -181,7 +181,6 @@ DROP TABLE IF EXISTS `Invoice`;
 CREATE TABLE `Invoice` (
   `id` int NOT NULL,
   `paymentTransactionID` int NOT NULL,
-  `transactionID` int NOT NULL,
   `returnDockID` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_invoice_paymentTransaction_idx` (`paymentTransactionID`),
@@ -319,4 +318,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-07 18:11:44
+-- Dump completed on 2023-01-08 21:16:55
