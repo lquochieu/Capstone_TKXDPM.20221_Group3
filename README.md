@@ -61,3 +61,9 @@
   + [Usecase *"Return-bike"*](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week2/Architectural%20Design/Class%20Diagram/return-bike.png)
 - [GUI design](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI)
 - [Screen transition diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/tree/week2/Interface%20Design/GUI/ScreenTransitionDiagram.png)
+
+## Work in week 3
+1. [ERD Diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week3/Data%20modeling/ERD%20Diagram.png)
+2. [EER Diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week3/Data%20modeling/EER%20Diagram.png)
+3. [Phisycal data model](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week3/Data%20modeling/Physical%20data%20modeling.docx)
+
