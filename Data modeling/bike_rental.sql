@@ -15,298 +15,307 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+DROP DATABASE IF EXISTS bike_rental;
+CREATE DATABASE bike_rental;
+USE bike_rental;
+
 --
--- Table structure for table `Bicycle`
+-- Table structure for table `bicycle`
 --
 
-DROP TABLE IF EXISTS `Bicycle`;
+DROP TABLE IF EXISTS `bicycle`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Bicycle` (
+CREATE TABLE `bicycle` (
   `id` int NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_bicycle_bike` FOREIGN KEY (`id`) REFERENCES `Bike` (`id`)
+  CONSTRAINT `fk_bicycle_bike` FOREIGN KEY (`id`) REFERENCES `bike` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Bicycle`
+-- Dumping data for table `bicycle`
 --
 
-LOCK TABLES `Bicycle` WRITE;
-/*!40000 ALTER TABLE `Bicycle` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Bicycle` ENABLE KEYS */;
+LOCK TABLES `bicycle` WRITE;
+/*!40000 ALTER TABLE `bicycle` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bicycle` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Bike`
+-- Table structure for table `bike`
 --
 
-DROP TABLE IF EXISTS `Bike`;
+DROP TABLE IF EXISTS `bike`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Bike` (
+CREATE TABLE `bike` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `type` varchar(45) NOT NULL COMMENT 'Has 3 type :(Bicycle, Electric Bicycle, Tandem)',
+  `type` int NOT NULL COMMENT 'Has 3 type :(Bicycle, Electric Bicycle, Tandem)',
   `barcode` varchar(45) NOT NULL,
-  `value` float NOT NULL,
+  `value` int NOT NULL,
   `status` tinyint NOT NULL COMMENT '0: in use\n1: available',
   `dockID` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `barcode_UNIQUE` (`barcode`),
   KEY `fk_bike_dock_idx` (`dockID`),
-  CONSTRAINT `fk_bike_dock` FOREIGN KEY (`dockID`) REFERENCES `Dock` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `fk_bike_dock` FOREIGN KEY (`dockID`) REFERENCES `dock` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8646 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Bike`
+-- Dumping data for table `bike`
 --
 
-LOCK TABLES `Bike` WRITE;
-/*!40000 ALTER TABLE `Bike` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Bike` ENABLE KEYS */;
+LOCK TABLES `bike` WRITE;
+/*!40000 ALTER TABLE `bike` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bike` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Card`
+-- Table structure for table `card`
 --
 
-DROP TABLE IF EXISTS `Card`;
+DROP TABLE IF EXISTS `card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Card` (
-  `id` int NOT NULL,
+CREATE TABLE `card` (
+  `id` varchar(45) NOT NULL,
   `cvv` varchar(45) NOT NULL,
-  `date` datetime NOT NULL,
   `method` varchar(45) NOT NULL,
-  `dateExpiration` datetime NOT NULL,
-  `userID` char(12) NOT NULL,
+  `dateExpiration` date NOT NULL,
+  `userID` int NOT NULL,
+  `issuingBank` varchar(45) NOT NULL,
+  `owner` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_card_user_idx` (`userID`),
-  CONSTRAINT `fk_card_user` FOREIGN KEY (`userID`) REFERENCES `User` (`id`)
+  CONSTRAINT `fk_card_user` FOREIGN KEY (`userID`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Card`
+-- Dumping data for table `card`
 --
 
-LOCK TABLES `Card` WRITE;
-/*!40000 ALTER TABLE `Card` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Card` ENABLE KEYS */;
+LOCK TABLES `card` WRITE;
+/*!40000 ALTER TABLE `card` DISABLE KEYS */;
+INSERT INTO `card` VALUES ('kstn_group3_2022','12345','0','2024-01-01',1,'Vietinbank','Group 3');
+/*!40000 ALTER TABLE `card` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `CreditCard`
+-- Table structure for table `creditcard`
 --
 
-DROP TABLE IF EXISTS `CreditCard`;
+DROP TABLE IF EXISTS `creditcard`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `CreditCard` (
-  `id` int NOT NULL,
+CREATE TABLE `creditcard` (
+  `id` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_creditCard_card` FOREIGN KEY (`id`) REFERENCES `Card` (`id`)
+  CONSTRAINT `fk_CreditCard_Card` FOREIGN KEY (`id`) REFERENCES `card` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `CreditCard`
+-- Dumping data for table `creditcard`
 --
 
-LOCK TABLES `CreditCard` WRITE;
-/*!40000 ALTER TABLE `CreditCard` DISABLE KEYS */;
-/*!40000 ALTER TABLE `CreditCard` ENABLE KEYS */;
+LOCK TABLES `creditcard` WRITE;
+/*!40000 ALTER TABLE `creditcard` DISABLE KEYS */;
+INSERT INTO `creditcard` VALUES ('kstn_group3_2022');
+/*!40000 ALTER TABLE `creditcard` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Dock`
+-- Table structure for table `dock`
 --
 
-DROP TABLE IF EXISTS `Dock`;
+DROP TABLE IF EXISTS `dock`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Dock` (
-  `id` int NOT NULL,
+CREATE TABLE `dock` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `address` varchar(45) NOT NULL,
   `area` float NOT NULL,
   `status` tinyint NOT NULL,
+  `bikeAmount` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Dock`
+-- Dumping data for table `dock`
 --
 
-LOCK TABLES `Dock` WRITE;
-/*!40000 ALTER TABLE `Dock` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Dock` ENABLE KEYS */;
+LOCK TABLES `dock` WRITE;
+/*!40000 ALTER TABLE `dock` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dock` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `ElectricBicycle`
+-- Table structure for table `electricbicycle`
 --
 
-DROP TABLE IF EXISTS `ElectricBicycle`;
+DROP TABLE IF EXISTS `electricbicycle`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ElectricBicycle` (
+CREATE TABLE `electricbicycle` (
   `id` int NOT NULL,
   `battery` int NOT NULL,
   `licensePlate` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_electricBicycle_bike` FOREIGN KEY (`id`) REFERENCES `Bike` (`id`)
+  CONSTRAINT `fk_electricBicycle_bike` FOREIGN KEY (`id`) REFERENCES `bike` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `ElectricBicycle`
+-- Dumping data for table `electricbicycle`
 --
 
-LOCK TABLES `ElectricBicycle` WRITE;
-/*!40000 ALTER TABLE `ElectricBicycle` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ElectricBicycle` ENABLE KEYS */;
+LOCK TABLES `electricbicycle` WRITE;
+/*!40000 ALTER TABLE `electricbicycle` DISABLE KEYS */;
+/*!40000 ALTER TABLE `electricbicycle` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Invoice`
+-- Table structure for table `invoice`
 --
 
-DROP TABLE IF EXISTS `Invoice`;
+DROP TABLE IF EXISTS `invoice`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Invoice` (
-  `id` int NOT NULL,
+CREATE TABLE `invoice` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `paymentTransactionID` int NOT NULL,
   `returnDockID` int NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_invoice_paymentTransaction_idx` (`paymentTransactionID`),
   KEY `fk_invoice_returnDock_idx` (`returnDockID`),
-  CONSTRAINT `fk_invoice_paymentTransaction` FOREIGN KEY (`paymentTransactionID`) REFERENCES `PaymentTransaction` (`id`),
-  CONSTRAINT `fk_invoice_returnDock` FOREIGN KEY (`returnDockID`) REFERENCES `Dock` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `fx_invoice_paymenTransaction_idx` (`paymentTransactionID`),
+  CONSTRAINT `fk_invoice_returnDock` FOREIGN KEY (`returnDockID`) REFERENCES `dock` (`id`),
+  CONSTRAINT `fx_invoice_paymenTransaction` FOREIGN KEY (`paymentTransactionID`) REFERENCES `paymenttransaction` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Invoice`
+-- Dumping data for table `invoice`
 --
 
-LOCK TABLES `Invoice` WRITE;
-/*!40000 ALTER TABLE `Invoice` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Invoice` ENABLE KEYS */;
+LOCK TABLES `invoice` WRITE;
+/*!40000 ALTER TABLE `invoice` DISABLE KEYS */;
+/*!40000 ALTER TABLE `invoice` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `PaymentTransaction`
+-- Table structure for table `paymenttransaction`
 --
 
-DROP TABLE IF EXISTS `PaymentTransaction`;
+DROP TABLE IF EXISTS `paymenttransaction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `PaymentTransaction` (
-  `id` int NOT NULL,
+CREATE TABLE `paymenttransaction` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `transactionID` int NOT NULL,
   `category` varchar(45) NOT NULL COMMENT '2 type: (pay, refund)',
-  `cardID` int NOT NULL,
-  `errorCode` varchar(45) DEFAULT NULL COMMENT 'errorCode = null',
+  `cardID` varchar(45) NOT NULL,
+  `errorCode` varchar(45) NOT NULL COMMENT 'errorCode = null',
   `content` varchar(45) DEFAULT NULL,
-  `amount` float NOT NULL,
+  `amount` int NOT NULL,
   `createAt` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_paymentTransaction_transaction_idx` (`transactionID`),
-  KEY `fx_paymentTransaction_card_idx` (`cardID`),
-  CONSTRAINT `fk_paymentTransaction_transaction` FOREIGN KEY (`transactionID`) REFERENCES `Transaction` (`id`),
-  CONSTRAINT `fx_paymentTransaction_card` FOREIGN KEY (`cardID`) REFERENCES `Card` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `fk_paymentTransaction_card_idx` (`cardID`),
+  KEY `fx_paymentTransaction_transaction_idx` (`transactionID`),
+  CONSTRAINT `fk_paymentTransaction_card` FOREIGN KEY (`cardID`) REFERENCES `card` (`id`),
+  CONSTRAINT `fx_paymentTransaction_transaction` FOREIGN KEY (`transactionID`) REFERENCES `transaction` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `PaymentTransaction`
+-- Dumping data for table `paymenttransaction`
 --
 
-LOCK TABLES `PaymentTransaction` WRITE;
-/*!40000 ALTER TABLE `PaymentTransaction` DISABLE KEYS */;
-/*!40000 ALTER TABLE `PaymentTransaction` ENABLE KEYS */;
+LOCK TABLES `paymenttransaction` WRITE;
+/*!40000 ALTER TABLE `paymenttransaction` DISABLE KEYS */;
+/*!40000 ALTER TABLE `paymenttransaction` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Tandem`
+-- Table structure for table `tandem`
 --
 
-DROP TABLE IF EXISTS `Tandem`;
+DROP TABLE IF EXISTS `tandem`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Tandem` (
+CREATE TABLE `tandem` (
   `id` int NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_tandem_bike` FOREIGN KEY (`id`) REFERENCES `Bike` (`id`)
+  CONSTRAINT `fk_tandem_bike` FOREIGN KEY (`id`) REFERENCES `bike` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Tandem`
+-- Dumping data for table `tandem`
 --
 
-LOCK TABLES `Tandem` WRITE;
-/*!40000 ALTER TABLE `Tandem` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Tandem` ENABLE KEYS */;
+LOCK TABLES `tandem` WRITE;
+/*!40000 ALTER TABLE `tandem` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tandem` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Transaction`
+-- Table structure for table `transaction`
 --
 
-DROP TABLE IF EXISTS `Transaction`;
+DROP TABLE IF EXISTS `transaction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Transaction` (
-  `id` int NOT NULL,
-  `userID` char(12) NOT NULL,
+CREATE TABLE `transaction` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userID` int NOT NULL,
   `bikeID` int NOT NULL,
   `dateTime` datetime NOT NULL,
-  `totalTime` float DEFAULT NULL,
+  `totalTime` float NOT NULL DEFAULT '0',
   `status` tinyint NOT NULL COMMENT '0: renting\n1: finish renting\nStatus = 0 -> totalTime = null',
   PRIMARY KEY (`id`),
-  KEY `fk_transaction_user_idx` (`userID`),
   KEY `fx_transaction_bike_idx` (`bikeID`),
-  CONSTRAINT `fk_transaction_user` FOREIGN KEY (`userID`) REFERENCES `User` (`id`),
-  CONSTRAINT `fx_transaction_bike` FOREIGN KEY (`bikeID`) REFERENCES `Bike` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `fk_transaction_user_idx` (`userID`),
+  CONSTRAINT `fk_transaction_user` FOREIGN KEY (`userID`) REFERENCES `user` (`id`),
+  CONSTRAINT `fx_transaction_bike` FOREIGN KEY (`bikeID`) REFERENCES `bike` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Transaction`
+-- Dumping data for table `transaction`
 --
 
-LOCK TABLES `Transaction` WRITE;
-/*!40000 ALTER TABLE `Transaction` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Transaction` ENABLE KEYS */;
+LOCK TABLES `transaction` WRITE;
+/*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
+/*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `User`
+-- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `User`;
+DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `User` (
-  `id` char(12) NOT NULL COMMENT 'Căn cước công dân',
+CREATE TABLE `user` (
+  `id` int NOT NULL COMMENT 'CÄƒn cÆ°á»›c cÃ´ng dÃ¢n',
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `User`
+-- Dumping data for table `user`
 --
 
-LOCK TABLES `User` WRITE;
-/*!40000 ALTER TABLE `User` DISABLE KEYS */;
-/*!40000 ALTER TABLE `User` ENABLE KEYS */;
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'Group 3');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -318,4 +327,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-08 21:16:55
+-- Dump completed on 2023-02-02 13:08:57

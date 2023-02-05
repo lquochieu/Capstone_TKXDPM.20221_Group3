@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" styleClass="main-pane" stylesheets="@../../Style.css"
+            xmlns="http://javafx.com/javafx/19"
+>
+    <children>
+        <AnchorPane prefHeight="80.0" prefWidth="1080.0" styleClass="top-pane" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="135.0" layoutX="7.0" layoutY="17.0" pickOnBounds="true"
+                           preserveRatio="true" styleClass="logo" AnchorPane.bottomAnchor="23.0"
+                           AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="17.0">
+                    <image>
+                        <Image url="@../../image/Logo.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="86.0" layoutY="21.0" styleClass="ecobike" text="Ecobike" AnchorPane.leftAnchor="90.0"/>
+                <Label onMouseClicked="#aboutUs" styleClass="menu-text" text="About us" AnchorPane.leftAnchor="381.0"
+                       AnchorPane.topAnchor="32.0"/>
+                <Label layoutX="391.0" layoutY="42.0" onMouseClicked="#contact" styleClass="menu-text" text="Contact"
+                       AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="32.0"/>
+                <Label layoutX="401.0" layoutY="52.0" onMouseClicked="#help" styleClass="menu-text" text="Help"
+                       AnchorPane.leftAnchor="689.0" AnchorPane.topAnchor="32.0"/>
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="824.0" layoutY="26.0" pickOnBounds="true"
+                           preserveRatio="true" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="25.0">
+                    <image>
+                        <Image url="@../../image/User.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="899.0" layoutY="32.0" styleClass="user-name" text="User" AnchorPane.rightAnchor="145.0"
+                       AnchorPane.topAnchor="32.0"/>
+            </children>
+        </AnchorPane>
+        <Pane layoutY="81.0" prefWidth="320.0" styleClass="deco-pane" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="81.0"/>
+        <ImageView fitHeight="505.0" fitWidth="656.0" layoutX="193.0" layoutY="212.0" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="97.0">
+            <image>
+                <Image url="@../../image/Bicycle.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="650.0" layoutY="273.0" styleClass="title" text="Rent a bike anywhere"/>
+        <Button layoutX="655.0" layoutY="339.0" mnemonicParsing="false" onAction="#viewDockList"
+                styleClass="large-button" text="View dock list"/>
+        <Button layoutX="654.0" layoutY="426.0" mnemonicParsing="false" onAction="#viewRentingBikeDetail"
+                styleClass="large-button" text="View renting bike"/>
+    </children>
+</AnchorPane>

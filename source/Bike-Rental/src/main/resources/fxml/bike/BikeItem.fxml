@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="532.0" styleClass="item-pane"
+            stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/19">
+    <children>
+        <Label fx:id="bikeName" styleClass="item-title-text" text="Electric bicycle 1" AnchorPane.leftAnchor="24.0"
+               AnchorPane.topAnchor="10.0"/>
+        <VBox layoutX="25.0" layoutY="37.0" spacing="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="40.0">
+            <children>
+                <AnchorPane>
+                    <children>
+                        <Label styleClass="item-info-text" text="Type:" AnchorPane.leftAnchor="0.0"
+                               AnchorPane.topAnchor="0.0"/>
+                        <Label fx:id="bikeType" styleClass="item-info-text" text="Electric bicycle"
+                               AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefWidth="240.0">
+                    <children>
+                        <Label styleClass="item-info-text" text="Value:" AnchorPane.leftAnchor="0.0"
+                               AnchorPane.topAnchor="0.0"/>
+                        <Label layoutX="99.0" layoutY="4.0" style="-fx-font-style: italic;" styleClass="item-info-text"
+                               text="VND" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="System Italic" size="13.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="value" layoutX="118.0" styleClass="item-info-text" text="10"
+                               AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="batteryPane">
+                    <children>
+                        <Label styleClass="item-info-text" text="Battery:" AnchorPane.leftAnchor="0.0"
+                               AnchorPane.topAnchor="0.0"/>
+                        <Label fx:id="battery" styleClass="item-info-text" text="80%" AnchorPane.leftAnchor="100.0"
+                               AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <Button layoutX="26.0" layoutY="143.0" mnemonicParsing="false" onAction="#viewBikeDetail"
+                styleClass="small-button" text="See detail" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="134.0"/>
+    </children>
+</AnchorPane>
