@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" styleClass="main-pane" stylesheets="@../../Style.css"
+            xmlns="http://javafx.com/javafx/19">
+    <children>
+        <AnchorPane prefHeight="80.0" prefWidth="1080.0" styleClass="top-pane" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="135.0" layoutX="7.0" layoutY="17.0" onMouseClicked="#returnHome"
+                           pickOnBounds="true" preserveRatio="true" styleClass="logo" AnchorPane.bottomAnchor="23.0"
+                           AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="17.0">
+                    <image>
+                        <Image url="@../../image/Logo.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="86.0" layoutY="21.0" styleClass="ecobike" text="Ecobike" AnchorPane.leftAnchor="90.0"/>
+                <Label onMouseClicked="#aboutUs" styleClass="menu-text" text="About us" AnchorPane.leftAnchor="381.0"
+                       AnchorPane.topAnchor="32.0"/>
+                <Label layoutX="391.0" layoutY="42.0" onMouseClicked="#contact" styleClass="menu-text" text="Contact"
+                       AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="32.0"/>
+                <Label layoutX="401.0" layoutY="52.0" onMouseClicked="#help" styleClass="menu-text" text="Help"
+                       AnchorPane.leftAnchor="689.0" AnchorPane.topAnchor="32.0"/>
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="824.0" layoutY="26.0" pickOnBounds="true"
+                           preserveRatio="true" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="25.0">
+                    <image>
+                        <Image url="@../../image/User.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="899.0" layoutY="32.0" styleClass="user-name" text="User" AnchorPane.rightAnchor="145.0"
+                       AnchorPane.topAnchor="32.0"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <children>
+                <VBox layoutX="34.0" layoutY="200.0" prefHeight="200.0" prefWidth="100.0" spacing="25.0"
+                      AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="120.0">
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="Bike ID:" AnchorPane.leftAnchor="0.0"
+                                       AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="bikeID" styleClass="item-info-text-bold" text="M8UI92TH"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="bikeName" styleClass="item-info-text-bold" text="Electric bicycle 1"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                                <Label styleClass="item-info-text-larger" text="Bike name:" AnchorPane.leftAnchor="0.0"
+                                       AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="Bike type:" AnchorPane.leftAnchor="0.0"
+                                       AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="bikeType" styleClass="item-info-text-bold" text="Electric bike"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="batteryPane" prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="Remaining battery:"
+                                       AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="battery" styleClass="item-info-text-bold" text="80%"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="licensePlatePane" prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="License plate:"
+                                       AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="licensePlate" styleClass="item-info-text-bold" text="29A-12345"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="licensePlatePane1" layoutX="10.0" layoutY="202.0" prefHeight="200.0"
+                                    prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="Rental dock:"
+                                       AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="dockName" styleClass="item-info-text-bold" text="Eco-bike 1"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="licensePlatePane11" layoutX="10.0" layoutY="250.0" prefHeight="200.0"
+                                    prefWidth="200.0">
+                            <children>
+                                <Label styleClass="item-info-text-larger" text="Dock address:"
+                                       AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                <Label fx:id="address" styleClass="item-info-text-bold" text="1 Dai Co Viet"
+                                       AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <Label layoutX="88.0" layoutY="109.0" styleClass="underline-title" text="Bike rental information"
+                       AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="30.0"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefWidth="360.0" styleClass="deco-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="81.0">
+            <children>
+                <Label styleClass="item-info-text-larger" text="Rental time:" AnchorPane.leftAnchor="20.0"
+                       AnchorPane.topAnchor="107.0"/>
+                <Label layoutX="10.0" layoutY="10.0" styleClass="item-info-text-larger" text="Amount:"
+                       AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="147.0"/>
+                <Label fx:id="rentalTime" styleClass="item-info-text-bold" text="0h 40m" AnchorPane.leftAnchor="144.0"
+                       AnchorPane.topAnchor="107.0"/>
+                <Label layoutX="20.0" layoutY="20.0" style="-fx-font-style: italic;" styleClass="item-info-text-bold"
+                       text="VND" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="147.0"/>
+                <Label fx:id="amount" layoutX="10.0" layoutY="10.0" styleClass="item-info-text-bold" text="19,500"
+                       AnchorPane.leftAnchor="194.0" AnchorPane.topAnchor="147.0"/>
+                <Button layoutX="100.0" layoutY="306.0" mnemonicParsing="false" onAction="#returnBike"
+                        styleClass="large-button" text="Return bike" AnchorPane.leftAnchor="85.0"
+                        AnchorPane.topAnchor="300.0">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND"/>
+                    </cursor>
+                </Button>
+                <Button layoutX="38.0" layoutY="421.0" mnemonicParsing="false" onAction="#back"
+                        styleClass="large-button" text="Back" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="400.0">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND"/>
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

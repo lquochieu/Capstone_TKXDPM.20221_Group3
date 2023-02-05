@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="608a333e-44a6-4378-bf59-7aa67accb052" name="Changes" comment="update ui">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/entity/invoice/InvoiceView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/bike/ReturnBikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/bike/ReturnBikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/calculateMoney/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/calculateMoney/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/calculateMoney/ICalculatorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/calculateMoney/ICalculatorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/dock/DockDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/dock/DockDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/bike/BicycleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/bike/BicycleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/bike/BikeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/bike/BikeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/bike/ElectricBicycleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/bike/ElectricBicycleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/bike/TandemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/bike/TandemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/connection/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/connection/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/entity/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/entity/transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/subsystem/banksubsystem/InterbankInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/subsystem/banksubsystem/InterbankInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/subsystem/banksubsystem/InterbankSubsystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/subsystem/banksubsystem/InterbankSubsystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SQLCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SQLCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BaseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/FXMLScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FXMLScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/bike/BikeDetailScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/bike/BikeDetailScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/bike/RentalBikeDetailScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/bike/RentalBikeDetailScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/dock/DockDetailScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/dock/DockDetailScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/dock/DockReturnItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/dock/DockReturnItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/home/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/home/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/invoice/InvoiceScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/invoice/InvoiceScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/payment/PaymentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/payment/PaymentForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/bike/BikeDetailScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/bike/BikeDetailScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dock/DockDetailScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dock/DockDetailScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dock/DockReturnScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dock/DockReturnScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/home/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/home/HomeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/home/SplashScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/home/SplashScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/invoice/InvoiceScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/invoice/InvoiceScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/payment/PaymentForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/payment/PaymentForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/bike/ReturnBikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/bike/ReturnBikeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/dock/DockDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/dock/DockDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/bike/BikeDetailScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/bike/BikeDetailScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/dock/DockDetailScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/dock/DockDetailScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/home/SplashScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/home/SplashScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/payment/PaymentForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/payment/PaymentForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/connection/MySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/connection/MySQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/SQLCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SQLCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/dock/DockDetailScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/dock/DockDetailScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/payment/PaymentForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/payment/PaymentForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bike_rental.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../bike_rental.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lquochieu &lt;trantronghiep2001@gmail&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/utils/UserInfo.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KVA3UFKSqPPrLWNpM3kUHsS0Qk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Documents/new/App/Bike-Rental/src/main/resources/font&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/font" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/fxml/home" />
+      <recent name="$PROJECT_DIR$/src/main/resources/image" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GenData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.GenData" />
+      <module name="Bike-Rental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Bike-Rental" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.test" />
+      <module name="Bike-Rental" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarcodeControllerTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Bike-Rental" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BarcodeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarcodeControllerTest.validateBarcode (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bike-Rental" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BarcodeControllerTest" />
+      <option name="METHOD_NAME" value="validateBarcode(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarcodeControllerTest.validateBarcode" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Bike-Rental" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BarcodeControllerTest" />
+      <option name="METHOD_NAME" value="validateBarcode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterbankSubsystemControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bike-Rental" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InterbankSubsystemControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterbankSubsystemControllerTest.payRental" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bike-Rental" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InterbankSubsystemControllerTest" />
+      <option name="METHOD_NAME" value="payRental" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Unnamed (1)" />
+      <item itemvalue="Application.GenData" />
+      <item itemvalue="JUnit.BarcodeControllerTest" />
+      <item itemvalue="JUnit.BarcodeControllerTest.validateBarcode" />
+      <item itemvalue="JUnit.BarcodeControllerTest.validateBarcode (1)" />
+      <item itemvalue="JUnit.InterbankSubsystemControllerTest.payRental" />
+      <item itemvalue="JUnit.InterbankSubsystemControllerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenData" />
+        <item itemvalue="JUnit.InterbankSubsystemControllerTest" />
+        <item itemvalue="JUnit.BarcodeControllerTest.validateBarcode (1)" />
+        <item itemvalue="JUnit.InterbankSubsystemControllerTest.payRental" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="608a333e-44a6-4378-bf59-7aa67accb052" name="Changes" comment="" />
+      <created>1674049178539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674049178539</updated>
+      <workItem from="1674049181024" duration="74000" />
+      <workItem from="1674049277202" duration="477000" />
+      <workItem from="1674049767250" duration="15052000" />
+      <workItem from="1674092440691" duration="362000" />
+      <workItem from="1674092838512" duration="24848000" />
+      <workItem from="1674178304892" duration="11974000" />
+      <workItem from="1674214712223" duration="82894000" />
+      <workItem from="1675069746256" duration="48285000" />
+      <workItem from="1675492441247" duration="2617000" />
+      <workItem from="1675521895791" duration="7774000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix junit maven">
+      <created>1675100164772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675100164772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update module-info">
+      <created>1675100193332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675100193332</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix unit test">
+      <created>1675100290178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675100290178</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update ui">
+      <created>1675187130144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675187130144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: javadocs" />
+    <MESSAGE value="fix: junit maven" />
+    <MESSAGE value="fix junit maven" />
+    <MESSAGE value="update module-info" />
+    <MESSAGE value="fix: unit test" />
+    <MESSAGE value="fix unit test" />
+    <MESSAGE value="update ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui" />
+  </component>
+</project>

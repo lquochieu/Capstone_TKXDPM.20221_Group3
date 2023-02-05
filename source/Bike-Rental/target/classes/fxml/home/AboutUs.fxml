@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="308.0" style="-fx-background-color: #c8c6c4; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="75.0" layoutY="8.0" onMouseClicked="#close" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@../../image/close.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="7.0" text="Developers" AnchorPane.leftAnchor="108.0" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="44.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" style="-fx-border-color: #d8a285; -fx-border-radius: 20;" styleClass="item-info-text-larger" stylesheets="@../../Style.css" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="41.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label style="-fx-font-size: 15;" text="Le Huy Hoang" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="10.0" style="-fx-font-size: 15;" text="-    20190053" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <Line endX="210.0" stroke="#d8a285" />
+            <AnchorPane layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label style="-fx-font-size: 15;" text="Tran Trong Hiep" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="10.0" style="-fx-font-size: 15;" text="-    20190051" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <Line endX="210.0" layoutX="111.0" layoutY="44.0" stroke="#d8a285" />
+            <AnchorPane layoutX="10.0" layoutY="54.0">
+               <children>
+                  <Label style="-fx-font-size: 15;" text="Tran Le Hiep" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="10.0" style="-fx-font-size: 15;" text="-    20190050" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
