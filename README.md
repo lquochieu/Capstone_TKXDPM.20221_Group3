@@ -1,4 +1,10 @@
 # Capstone_TKXDPM.20221_Group3
+## Splash screen
+<picture>
+  <img alt="Splash screen"
+     src="https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/release/final_submission/Interface%20Design/GUI/SplashScreen/SplashScreen.png">
+  </picture>
+  
 ## Usecase diagram
 <picture>
   <img alt="Usecase" src="https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week1/Requirement%20Analysis/Usecase%20Diagram/UC%20RentalBike.png">
@@ -67,3 +73,6 @@
 2. [EER Diagram](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week3/Data%20modeling/EER%20Diagram.png)
 3. [Phisycal data model](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/week3/Data%20modeling/Physical%20data%20modeling.docx)
 
+## Final work
+### [Video demo](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/release/final_submission/demo/demo_rental-bike.mov)
+### [Final report](https://github.com/lquochieu/Capstone_TKXDPM.20221_Group3/blob/release/final_submission/Final-Report.pdf)
